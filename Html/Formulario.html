@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Para Html</title>
+    <link rel="stylesheet" href="/css/Estilos para el formulario.css">
+
+</head>
+
+<body>
+<h1>Alta de Usuario</h1>
+
+<form action="" method="post">
+<label for="Nombre"> Nombre</label>
+<input type="text" name="Nombre" id="Nombre"required placeholder="Ingrese su nombre"><br>
+
+<label for="Apellido">Apellido</label>
+<input type="text" name="Apellido" id="Apellido"required placeholder="Ingrese su Apellido"><br>
+
+<label for="Edad">Edad</label>
+<input type="number" name="Edad" id="Edad"required placeholder="Ingrese su edad en numeros"><br>
+
+<div>
+    <label for="Sexo">Sexo</label>
+    <select name="Genero" id="Genero">
+    <option value="M">Masculino</option>
+    <option value="F">Femenino</option>
+    <option value="NO">No Binarie</option></select><br><br>
+</div>
+
+<label for="Altura">Altura</label>
+<input type="number" name="Altura" id="Altura" placeholder="Ingrese su altura" required step="0.05"><br>
+
+<label for="Email">Email</label>
+<input type="email" name="Email" id="Email"required><br>
+
+<label for="Usuario">Usuario</label>
+<input type="text" name="Usuario" id="Usuario"required><br>
+
+<label for="password">Contraseña</label>
+<input type="password" name="Contraseña" id="Contraseña"required><br>
+
+<div>
+<button name="guardar" id="guardar"type="submit" >Guardar</button>
+<button name="cancelar" id="cancelar"type="reset">Cancelar</button>
+</div>
+
+</body>
+</html>
