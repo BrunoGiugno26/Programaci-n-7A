@@ -1,5 +1,11 @@
 nav{
-background-color: darkorange;
+background-color: rgb(233, 172, 172);
+}
+
+header{
+    background-color: rgb(247, 19, 19);
+    align-items: center;
+    justify-content: center;
 }
 
 p{
