@@ -1,42 +1,116 @@
-nav{
-background-color: rgb(233, 172, 172);
+*{
+    text-align: center;
 }
 
+body{
+    background-color: rgb(245, 227, 212);
+    margin: auto;
+}
 header{
-    background-color: rgb(247, 19, 19);
+    background-color: rgb(41, 39, 39);
+    padding-top: 1em;
     align-items: center;
     justify-content: center;
 }
 
+nav{
+background-color: rgb(99, 96, 96);
+padding:0px;
+margin:0px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+nav a:hover{
+    color: white;
+}
+nav li{
+    padding: 0px;
+    margin: 0px;
+}
+main{
+    background-color: rgb(124, 116, 109);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section{
+    background-color: rgb(231, 170, 159);
+    margin: 10px;
+    padding: 10px;
+    max-width: 200x;
+    min-width: 300px;
+}
+
+article{
+    background-color: rgb(241, 150, 138);
+    margin: 10px;
+    padding: 10px;
+    min-height: 150px;
+}
+
+footer{
+    background-color: rgb(24, 23, 23);
+    padding: 10px;
+}
+
 p{
     font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+    font-size: 1.5em;
+    font-style: oblique;
 }
 
 h1{
+    color:white;
     margin: 20px;
     margin: top 20px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
     margin-left: 1px;
     align-items: center;
     justify-content: center;
 }
 h2{
+    color: white;
 font-family: Arial, Helvetica, sans-serif;
+font-size: 2em;
 margin: 20px;
 margin-top:50px;
 margin-left: 1px;
 margin-right: 1px;
 }
-
-body{
-    background-color: rgb(238, 229, 229);
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
 }
-
+h4{
+    font-size: 1.9em;
+}
 ul,ol{
     margin:8px;
     margin-top: 10px;
     margin-left: 1px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li{
+    text-align: justify;
+    font-family:cursive;
+    font-size: 1.6em;
 }
 
 #Abby{
@@ -51,13 +125,43 @@ ul,ol{
 
 #Ellie{
     object-fit: contain;
-    color: #559ff3;
+    color: #0a6ad8;
     
 }
 
 .WeaponsE{
-    color: #559ff3;  
+    color: #0a6ad8;  
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.sEllie{
+    background-color:rgb(165, 238, 222);
+}
 
+.aEllie{
+    background-color: rgb(140, 188, 197);
+}
+.h2section1{
+    color: black;
+}
+
+.H1f,.h1f{
+    color: black;
+    text-align:start;
+    justify-content: flex-start;
+}
+.h1f{
+    text-align: center;
+
+}
+
+.pfooter{
+    color: white;
+}
+.olAbby{
+    color: red;
+}
+
+.ulEllie{
+    color: #0a6ad8; 
+}
