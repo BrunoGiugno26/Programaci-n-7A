@@ -1,0 +1,36 @@
+body{
+    background-color: #5bfda8;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: #555;
+}
+
+.Encabezado{
+    text-align: center;
+}
+
+#Primero{
+    color: #369
+    
+}
+.especial{
+    color: #FFFF00;
+    background-color: #000000;
+}
+.emPrimero{
+    color: #0000BB;
+    background-color: #FFFFCC;
+}
+
+.normal{
+font-weight: bold;
+}
+
+a{
+    color: #c30;
+    text-decoration: none;
+}
+
