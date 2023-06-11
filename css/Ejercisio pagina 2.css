@@ -1,0 +1,31 @@
+body{
+    color:blue;
+    background-color: #cfc;
+    font-family:Georgia,cambria,serif;
+    font: size 16px;
+}
+
+h1{
+    color: #F00;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+}
+
+h2{
+    color: #a00;
+    font-family: Verdana,calibri, sans-serif;
+    font-size: 24px;
+}
+
+.tituloLi{
+    color: #060;
+}
+
+.sustantivos{
+    font-size: 20px;
+}
+
+.remarcados{
+    color: #fff;
+    background-color: black;
+}
