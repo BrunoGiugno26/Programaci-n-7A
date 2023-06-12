@@ -1,5 +1,9 @@
 /*Etiquetas*/
 
+body{
+    background-image: linear-gradient(to right,white,black);
+}
+
 
 form{
     display:flex;
