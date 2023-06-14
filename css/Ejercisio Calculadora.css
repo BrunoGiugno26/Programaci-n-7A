@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(177, 169, 169);
+}
+
+.Calculadora{
+    max-width: 300px;
+    margin: 0 auto; /*con mi primer paramentro digo que no tiene margen arriba y abajo.
+    Y con el segundo parametro indico que que tiene un margen automatico de izquierda a la derecha*/
+}
