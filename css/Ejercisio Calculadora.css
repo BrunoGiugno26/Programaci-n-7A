@@ -4,6 +4,49 @@ body{
 
 .Calculadora{
     max-width: 300px;
-    margin: 0 auto; /*con mi primer paramentro digo que no tiene margen arriba y abajo.
+    margin: 5% auto; /*con mi primer paramentro digo que no tiene margen arriba y abajo.
     Y con el segundo parametro indico que que tiene un margen automatico de izquierda a la derecha*/
+    padding: 8px;
+    background-color: rgb(235, 205, 141);
+    border-radius: 5px;
+}
+
+.CalculadoraPantalla{
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 5px 3px ;/*El margin puede llevar hasta 4 posiciones*/
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 25px;
+    padding: 3px;
+}
+
+.calculadoraBoton{
+    background-color: rgb(158, 221, 240);
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.calculadoraBotonC{
+    background-color: rgb(231, 128, 80);
+    color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.CalculadoraBotonera{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 6px;
+}
+
+.calculadoraBoton:hover{
+    background-color: white;
+    font-size: 16px;
 }
