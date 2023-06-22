@@ -13,7 +13,6 @@ body{
     height: 100vh;
     margin: 0;
     background-color: rgb(245, 227, 212);
-    margin: auto;
 }
 #pageHeader{
     grid-area: header;
@@ -46,7 +45,7 @@ nav ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction:row;
     justify-content: space-around;
 }
 nav a{
