@@ -3,9 +3,31 @@
 }
 
 body{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 1fr 5%;
+    height: 100vh;
+    margin: 0;
     background-color: rgb(245, 227, 212);
     margin: auto;
 }
+#pageHeader{
+    grid-area: header;
+
+}
+
+#mainBody{
+    grid-area: main;
+}
+
+#mainFooter{
+    grid-area: footer;
+}
+
 header{
     background-color: rgb(41, 39, 39);
     padding-top: 1em;
@@ -15,8 +37,10 @@ header{
 
 nav{
 background-color: rgb(99, 96, 96);
-padding:0px;
-margin:0px;
+padding-top: 0em;
+padding:0em;
+margin:0em;
+
 }
 nav ul{
     list-style: none;
@@ -64,7 +88,8 @@ article{
 
 footer{
     background-color: rgb(24, 23, 23);
-    padding: 10px;
+    padding: 40px;
+    margin:0em;
 }
 
 p{
@@ -79,10 +104,13 @@ h1{
     margin: 20px;
     margin: top 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
+    font-size: 2.4em;
     margin-left: 1px;
     align-items: center;
     justify-content: center;
+}
+.Thelastofus{
+    font-size: 2.4em;
 }
 h2{
     color: white;
@@ -164,4 +192,96 @@ li{
 
 .ulEllie{
     color: #0a6ad8; 
+}
+
+.Container{
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: rgb(141, 136, 136);
+}
+
+th{
+    border: 1px solid black;
+    color: black;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    background-color: lightslategrey;
+}
+
+td{
+    border: 1px solid black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 4px;
+}
+
+image{
+    width: 70%;
+    aspect-ratio: 7px / 6px;
+    object-fit: contain;
+}
+
+#pEllie{
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(125, 239, 243);
+}
+#pAbby{
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(240, 47, 47);
+}
+
+#pJoel{
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85, 216, 85);
+}
+
+#pTommy{
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+}
+
+#pDina{
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: pink;
+}
+
+.tdEllie{
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(125, 239, 243);
+}
+.tdJoel{
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85, 216, 85);
+}
+.tdTommy{
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+}
+.tdAbby{
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+.tdDina{
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: pink 
 }
