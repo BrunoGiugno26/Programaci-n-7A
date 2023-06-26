@@ -286,14 +286,3 @@ image{
     font-family: Arial, Helvetica, sans-serif;
     color: pink 
 }
-
-@keyframes perspectiva{
-    from{transform: perspective(1);}
-    to{transform: perspective(180deg);}
-}
-#aAnimation{
-    cursor: pointer;
-    animation-name: perspectiva;
-    animation-duration: 5s;
-
-}
