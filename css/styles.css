@@ -1,140 +1,93 @@
-/* 
-El uso de la fuente de google 
-font-family: 'Lato', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Roboto Mono', monospace;
-*/
+/*es el uso de la fuente de google
 
-/*? DEFINIR VARIABLES  y CONFIG GLOBALES PARA EL PROYECTO*/
+font-family: 'Poppins', sans-serif;
+font-family: 'Staatliches', cursive;*/
+
+/*DEFINIMOS LAS VARIABLES Y CONFIGURACIONES GLOBALES PARA EL PROYECTO*/
 
 :root{
-
-    --fuenteHeading: 'Roboto Mono', monospace;
-    --fuenteParrafo: 'Lato', sans-serif;
-
-    --primario: #783c6e;
-    --blanco: white;
-    --negro: black;
-    --gris: rgb(167, 167, 167);
+    --fuenteHeading: "font-family: 'Poppins', sans-serif;";
+    --fuenteParrafo: "font-family: 'Staatliches', cursive;";
+    --Primario: color red;
+    --Blanco: color white;
+    --Negro: color black;
+    --gris:color gray;
 }
 
 html{
-    box-sizing: border-box; /* con esto vamos a evitar tener problemas con los margin y padding en el HTML*/
-    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box;/* sirve para evitar tener problemas con los margin y paddings*/
+    font-size: 62,5%;/* 1rem=10px*/
 }
 
-*,*:before,*:after{
+*,*::before,*::after{
     box-sizing: inherit;
 }
 
 body{
     font-family: var(--fuenteParrafo);
-    font-size: 1.8rem ;
+    font-size: 1,8rem;
     line-height: 2;
 }
 
-/*? utilidades: clases que van a ejecutar cierto CSS */
+/* UTILIDADES: clases que van a ejecutar cierto CSS*/
 
-.no-margin {
+.no-margin{
     margin: 0;
 }
 
-.no-padding {
+.no-padding{
     padding: 0;
 }
 
-.centrar-texto
-{
+ .centrar-texto{
     text-align: center;
+ }
+/*Elementos de uso Global*/
+
+.contenedor{
+    width: min(90%,150rem);
+    margin: 0 auto;
 }
 
-/*? elementos de uso global*/
-
-.contenedor {
-    width: min(90%,120rem); /* el div, se comporta de una manera RESPONSIVA en base a el navegador*/
-    margin: 0 auto; /* los elementos del div, se centran solos*/
-}
-
-a {
+a{
     text-decoration: none;
 }
 
 h1,h2,h3,h4{
     font-family: var(--fuenteHeading);
-    line-height: 1.2;
-    color: var(--blanco);
-    -webkit-text-stroke: 0.5px var(--negro);
+    color: var(--Primario);
+    line-height: 1.4; /* En este caso esta estiqueta va a servir para que los titulos no se peguen con la continuacion del contenido*/
 }
 
 h1{
-    font-size: 4.8rem ;
+    font-size: 4.8rem;   
 }
 
 h2{
-    font-size: 4rem ;
+    font-size: 4rem;
 }
 
 h3{
-    font-size: 3.2rem;
+    font-size :3.2rem;
 }
 
 h4{
     font-size: 2.4rem;
 }
 
-img {
-    max-width: 100%; /* defino ya el tamaño maximo que va a tener mi imagen*/
+img{
+    max-width: 100%;/*Defino el tamaño maximo que va a tener mis imagenes*/
+
 }
 
 .header{
-    background-image: url(../img/banner.jpg) ;
+    background-image: url(/img/banner.jpg);
     height: 60rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.barra {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navegacion{
-    display: flex;
-    gap: 2rem;
-}
-
-.enlace_navegacion {
-    color: var(--blanco);
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
-.header-titulo{
-    color: var(--blanco);
-    margin: 10rem;
-}
-
-.entrada{
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.texto-articulo{
-    font-weight: 800;
-}
-
-.boton{
-    font-family: var(--fuenteHeading);
-    background-color: var(--negro) ;
-    color: var(--blanco);
-    padding: 1rem 2.5rem;
-    font-weight: 700;
-}
-
-.contenido-principal{
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
+.header texto{
+    text-align: center;
 }
