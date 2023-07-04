@@ -12,15 +12,17 @@ font-family: 'Staatliches', cursive;*/
     --Blanco: white;
     --Negro: black;
     --gris: gray;
+    --Aqua: rgb(164, 238, 226);
 }
 
 html{
     box-sizing: border-box;/* sirve para evitar tener problemas con los margin y paddings*/
     font-size: 62,5%;/* 1rem=10px*/
 }
-
+/* Cuando ponemos un asterisco referenciamos a todos los elementos del documento*/
 *,*::before,*::after{
     box-sizing: inherit;
+    margin: 0;
 }
 
 body{
@@ -57,7 +59,6 @@ h1,h2,h3,h4{
     font-family: var(--fuenteHeading);
     color: var(--Blanco);
     line-height: 1.4; /* En este caso esta estiqueta va a servir para que los titulos no se peguen con la continuacion del contenido*/
-    color: var(--Blanco);
     -webkit-text-stroke: 0.3px var(--Negro);
 }
 
@@ -127,6 +128,7 @@ img{
 .boton{
     font-family: var(--fuenteHeading);
     cursor: pointer;
+    line-height: 4;
     background-color: var(--Negro);
     color: var(--Blanco);
     padding:0.8rem 1.2rem;
@@ -137,3 +139,67 @@ img{
     display: grid;
     grid-template-columns:1fr 0.5fr;
 }
+
+.asideBar{
+    margin: 0 1.5rem;
+}
+
+.boton-secundario{
+    font-family: var(--fuenteHeading);
+    cursor: pointer;
+    background-color: var(--Aqua);
+    color: var(--Negro);
+    font-weight: 600;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.curso{
+    list-style: none;
+}
+
+.item-curso{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.footer{
+    background-color: var(--Negro);
+    margin-top: 2rem;
+    padding: 3rem;
+}
+
+/* hover: comportamiento al posicionarse SOBRE EL ELEMENTO*/
+
+.boton-primario{
+    display: inline-block;
+}
+
+.boton-primario:hover{
+    background-color: var(--Blanco);
+    color: var(--Negro);
+    border: 1px solid var(--Negro);
+}
+
+.boton-secundario:hover{
+    background-color: var(--Negro);
+    color: var(--Aqua);
+    border: 3px solid var(--Aqua);
+}
+
+.enlace_navegacion:hover{
+    /*transform: nos permite ejecutar una accion de transformacion al ELEMENTO*/
+    transform:scale(1.2);
+}
+
+
+/*MARGIN:SEPARA LOS ELEMENTOS ENTRE SI
+
+margin 2rem; => separa en 2 rem las 4 direcciones
+margin 1rem 2rem; => separa en 1rem ARRIBA y ABAJO y en 2rem a la IZQUIERDA Y LA DERECHA
+margin 0.5rem 1rem 1.5rem 2rem; => 0.5rem ARRIBA 1rem a la DERECHA 1.5rem ABAJO y 2 rem a la IZQUIERDA
+
+SELECTORES DIRECTOS: seleccionamos directamente donde aplicar el margen
+
+margin-top; margin-bottom; margin-left; margin-right
+*/
