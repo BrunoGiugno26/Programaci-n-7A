@@ -29,6 +29,7 @@ body{
     font-family: var(--fuenteParrafo);
     font-size: 1,8rem;
     line-height: 2;
+    background-color: rgb(206, 200, 200);
 }
 
 /* UTILIDADES: clases que van a ejecutar cierto CSS*/
@@ -59,7 +60,7 @@ h1,h2,h3,h4{
     font-family: var(--fuenteHeading);
     color: var(--Blanco);
     line-height: 1.4; /* En este caso esta estiqueta va a servir para que los titulos no se peguen con la continuacion del contenido*/
-    -webkit-text-stroke: 0.3px var(--Negro);
+    -webkit-text-stroke: 1px var(--Negro);
 }
 
 h1{
@@ -128,10 +129,9 @@ img{
 .boton{
     font-family: var(--fuenteHeading);
     cursor: pointer;
-    line-height: 4;
     background-color: var(--Negro);
     color: var(--Blanco);
-    padding:0.8rem 1.2rem;
+    padding:0.8rem 2rem;
     font-weight: 900;
 }
 
@@ -192,6 +192,77 @@ img{
     transform:scale(1.2);
 }
 
+.sobre-nosotros{
+display: grid;
+grid-template-rows: 1fr 0.5fr;
+}
+
+.sobre-nosotros_imagen{
+    padding: 0 10rem;
+    flex-wrap: wrap;
+}
+
+.sobre-nosotros_texto p{
+    font-size: 2rem;
+    padding: 5rem;
+}
+
+.titulo-entrada{
+    margin: 2.5rem 0;
+}
+
+.curso{
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+}
+
+.negrita{
+    font-weight: 700;
+}
+
+.contacto-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    background-size: cover; 
+}
+
+.contenedor-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.formulario{
+    background-color: var(--Blanco);
+    margin:-5rem auto 0 auto;
+    padding: 5rem;
+    width: 95%;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.label-imput{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.campo-imput{
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid var(--Negro);
+}
+
+.text-area{
+    height: 20rem;
+    border-radius: 5px;
+}
 
 /*MARGIN:SEPARA LOS ELEMENTOS ENTRE SI
 
