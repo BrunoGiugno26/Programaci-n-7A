@@ -1,5 +1,24 @@
-*{
-    text-align: center;
+
+
+/*font-family: 'Bebas Neue', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Staatliches', cursive;*/
+
+:root{
+    --FuenteHeading:'Bebas Neue', sans-serif;
+    --FuenteTexto:'Nunito', sans-serif;
+    --Primario:rgb(245, 227, 212);
+    --secundario:rgb(124, 116, 109);
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
 }
 
 body{
@@ -8,7 +27,7 @@ body{
     "header header header"
     "main main main"
     "footer footer footer";
-    grid-template-columns: 1fr 0;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 20% 1fr 5%;
     height: 100vh;
     margin: 0;
