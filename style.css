@@ -1,0 +1,18 @@
+.contenedor-clasico{
+    background-color: aqua;
+    border: 1px solid blue;
+}
+
+.cont-bst{
+background-color: red;
+border: 1px solid black;
+}
+
+.grid-clasico{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+}
+
+.cont{
+    border: 1px solid black;
+}
