@@ -10,6 +10,7 @@ font-family: 'Staatliches', cursive;*/
     --FuenteTexto:'Nunito', sans-serif;
     --Primario:rgb(245, 227, 212);
     --secundario:rgb(124, 116, 109);
+    --blanco:white;
 }
 
 html{
@@ -20,288 +21,111 @@ html{
 *,*:before,*:after{
     box-sizing: inherit;
 }
+/*UTILIDADES*/
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
 
 body{
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20% 1fr 5%;
-    height: 100vh;
-    margin: 0;
-    background-color: rgb(245, 227, 212);
-}
-#pageHeader{
-    grid-area: header;
-
+    font-family: var(--FuenteHeading);
+    background-image: linear-gradient(to right, red, orange);
+    font-size: 1.6rem;
+    line-height: 2;
 }
 
-#mainBody{
-    grid-area: main;
+/*Parametros Globales*/
+
+.contenedor{
+    width: min (90%,120rem);
+    margin:0 auto;
 }
 
-#mainFooter{
-    grid-area: footer;
-}
-
-header{
-    background-color: rgb(41, 39, 39);
-    padding-top: 1em;
-    align-items: center;
-    justify-content: center;
-}
-
-nav{
-background-color: rgb(99, 96, 96);
-padding-top: 0em;
-padding:0em;
-margin:0em;
-
-}
-nav ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    justify-content: space-around;
-}
-nav a{
+a{
     text-decoration: none;
-    display: block;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
 }
 
-nav a:hover{
-    color: white;
-}
-nav li{
-    padding: 0px;
-    margin: 0px;
-}
-main{
-    background-color: rgb(124, 116, 109);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-section{
-    background-color: rgb(231, 170, 159);
-    margin: 10px;
-    padding: 10px;
-    max-width: 200x;
-    min-width: 300px;
-}
-
-article{
-    background-color: rgb(241, 150, 138);
-    margin: 10px;
-    padding: 10px;
-    min-height: 150px;
-}
-
-footer{
-    background-color: rgb(24, 23, 23);
-    padding: 40px;
-    margin:0em;
-}
-
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: start;
-    font-size: 1.5em;
-    font-style: oblique;
+h1,h2,h3,h4{
+    font-family: var(--FuenteHeading);
+    line-height: 1.2;
+    -webkit-text-stroke: 0.5px black;
+    color: var(--blanco);
 }
 
 h1{
-    color:white;
-    margin: 20px;
-    margin: top 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.4em;
-    margin-left: 1px;
-    align-items: center;
-    justify-content: center;
-}
-
-.Thelastofus{
-    font-size: 2.4em;
+    font-size: 4.8rem;
 }
 
 h2{
-    color: white;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 2em;
-margin: 20px;
-margin-top:50px;
-margin-left: 1px;
-margin-right: 1px;
+    font-size: 4rem;
 }
+
 h3{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8em;
+    font-size: 3.2rem;
 }
+
 h4{
-    font-size: 1.9em;
-}
-ul,ol{
-    margin:8px;
-    margin-top: 10px;
-    margin-left: 1px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.8rem;
 }
 
-li{
-    text-align: justify;
-    font-family:cursive;
-    font-size: 1.6em;
+img{
+    max-width: 100%;
 }
 
-#Abby{
-    object-fit: contain;
-    color: red;
+.header{
+    background-image: url(/img/the_last_of_us_2-5120103.jpg);
+    height: 70rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.WeaponsA{
-    color: red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#Ellie{
-    object-fit: contain;
-    color: #0a6ad8;
-    
-}
-
-.WeaponsE{
-    color: #0a6ad8;  
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.sEllie{
-    background-color:rgb(165, 238, 222);
-}
-
-.aEllie{
-    background-color: rgb(140, 188, 197);
-}
-.h2section1{
-    color: black;
-}
-
-.H1f,.h1f{
-    color: black;
-    text-align:start;
-    justify-content: flex-start;
-}
-.h1f{
+.header_texto{
     text-align: center;
-
+    color: var(--blanco);
+    margin-top: 10rem;
 }
 
-.pfooter{
-    color: white;
-}
-.olAbby{
-    color: red;
-}
-
-.ulEllie{
-    color: #0a6ad8; 
-}
-
-.Container{
+.barra{
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding-top: 12rem;
 }
 
-table{
-    width: 100%;
-    max-width: 1200px;
-    border: 1px solid black;
-    border-collapse: collapse;
-    background-color: rgb(141, 136, 136);
+.logo{
+    color: var(--blanco);
 }
 
-th{
-    border: 1px solid black;
-    color: black;
-    border-radius: 4px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.7em;
-    background-color: lightslategrey;
+.logo_nombre{
+    font-weight:400;
 }
 
-td{
-    border: 1px solid black;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
+.logo_bold{
+    font-weight: 700;
+}
+
+.navegacion{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navegacion_enlace{
+    display: block;
     text-align: center;
-    padding: 4px;
+    font-size: 2.5rem;
+    color: var(--blanco);
 }
 
-image{
-    width: 70%;
-    aspect-ratio: 7px / 6px;
-    object-fit: contain;
-}
-
-#pEllie{
-    font-size: 1.4em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(125, 239, 243);
-}
-#pAbby{
-    font-size: 1.4em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(240, 47, 47);
-}
-
-#pJoel{
-    font-size: 1.4em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(85, 216, 85);
-}
-
-#pTommy{
-    font-size: 1.4em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: aqua;
-}
-
-#pDina{
-    font-size: 1.4em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: pink;
-}
-
-.tdEllie{
-    font-size: 1.6em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(125, 239, 243);
-}
-.tdJoel{
-    font-size: 1.6em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(85, 216, 85);
-}
-.tdTommy{
-    font-size: 1.6em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: aqua;
-}
-.tdAbby{
-    font-size: 1.6em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: red;
-}
-.tdDina{
-    font-size: 1.6em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: pink 
+.contenedor-principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
