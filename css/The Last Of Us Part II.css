@@ -264,3 +264,75 @@ p{
 
 /*Contact*/
 
+.Contact-gb{
+    background-image: url(/img/Firefiles\ for\ contact.jpg);
+    height: 70rem;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.formulario{
+    background-color: var(--Primario);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 3rem;
+    font-size: 2.3rem;
+}
+
+.campo_label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 3rem;
+}
+
+.campo_field{
+    flex: 1;
+    border: 2px solid var(--secundario);
+}
+
+.campo_field--textarea{
+    height: 20rem ;
+}
+
+.boton{
+    display: inline-block;
+    font-family: var(--FuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.boton--primario{
+    background-color: var(--negro);
+}
+
+.h1-contact{
+    font-family: var(--FuenteTexto);
+    font-size: 6rem;
+}
+
+@keyframes colores{
+    0%{color: white;}
+    25%{color: rgba(238, 238, 238, 0.945);}
+    50%{color: rgba(255, 249, 249, 0.637);}
+    75%{color: rgba(238, 238, 238, 0.945);}
+    100%{color: white;}
+}
+
+.logo_nombre:hover{
+    animation: colores 2s infinite;
+}
+
+.logo_nombreF:hover{
+    animation: colores 2s infinite;
+}
