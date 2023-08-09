@@ -108,6 +108,50 @@
         <caption class="caption-top">Lista de usuarios</caption>
     </tbody>
 </table>
+<hr>
+<h1>Formulario en Bootstrap</h1>
+<h3>Formulario Clasico</h3>
+<form class="formulario" action="">
+
+<div>
+    <label for="name">Name</label>
+    <input type="text" placeholder="Put your name in this label">
+</div>
+
+<div>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="put your password here">
+</div><br>
+<hr>
+
+<h3>Formulario en Bootstrap</h3>
+<div class="container-sm border border-3 p-3 rounded-3 border-danger">
+<form class="row g-3" action="">
+
+    <div class="col-md-4 form-floating mb-3">
+        <input class="form-control" type="text" placeholder="Put your name in this label">
+        <label class="form-label" for="name">Name</label>
+    </div>
+    <div class="col-md-4 form-floating mb-3">
+        <input class="form-control" type="text" placeholder="Put your name in this label">
+        <label class="form-label" for="Surname">Surname</label>
+    </div>
+    <div class="col-md-4 form-floating mb-3">
+        <input class="form-control" type="email" placeholder="Put your name in this label">
+        <label class="form-label" for="Email">Email</label>
+    </div>
+    
+    <div class="form-floating mb-3">
+        <input class="form-control" type="text" name="User" id="User" placeholder="put your user here">
+        <label class="form-label" for="password">User</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input class="form-control" type="password" name="password" id="password" placeholder="put your password here">
+        <label class="form-label" for="password">Password</label>
+    </div>
+        <button class="btn btn-primary">Enviar</button>
+</form>
+</div>
 
 </body>
 </html>
