@@ -45,7 +45,7 @@ const altura = 1.88
 
 const direccion = "AV Libertador"
 
-direccion = ""
+direccion = "" //! CONST NO ME PERMITE CAMBIAR EL DATO CONTENIDO DENTRO
 
 //? recordemos declarar nuestras variables con LET O CONST
 
