@@ -46,18 +46,19 @@ console.log(resultado);
 
 //* Pedir datos a traves de prompt (ventana)
 
-let nombre_usuario = prompt("Diganos su nombre")
+/*let nombre_usuario = prompt("Diganos su nombre")
 
-alert("Hola " + nombre_usuario)
+alert("Hola " + nombre_usuario)*/
 
-let numero1= prompt("indique el primer numero")
+/*let numero1= prompt("indique el primer numero")
 console.log(numero1)
 let numero2= prompt("indique el segundo numero")
-console.log(numero2)
+console.log(numero2)*/
 
-alert(Number(numero1)+Number(numero2))
+/*alert(Number(numero1)+Number(numero2))
 
 let nacimiento=prompt("Cual es tu año de nacimiento")
 console.log(nacimiento)
 
 alert(`Hola ${nombre_usuario} bienvenido a JS. Tu edad es de ${numero1} años`)
+*/
