@@ -74,3 +74,16 @@ agenda
 agenda["ocupacion"] = "programador"
 agenda
 
+//quitar una propiedad usabamos el delete
+
+delete agenda.email // => metodo dot notation
+agenda
+
+delete agenda ["mascota"]
+agenda
+
+//?REPASO
+
+//los arrays son estructuras que se ordenan atravez de INDICES (una posicion dentro del array)
+//los objetos son estrucuturas que almacenan datos a traves de PROPIEDADES (una llave que almacena un valor)
+
