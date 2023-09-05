@@ -58,7 +58,7 @@ switch (depto){
 //*TAMBIEN PUEDE EVALUAR condiciones de MAYOR O MENOR.
 //* con este switch segun la nota del alumno, dira si promociona ,debe dar final o recursar
 
-const nota = 10
+const nota =10
 
 switch(nota){
     case nota >=7:
