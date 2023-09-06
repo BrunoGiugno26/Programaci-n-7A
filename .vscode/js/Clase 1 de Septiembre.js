@@ -66,7 +66,7 @@ while (contador_alumnos < 10){
 
 //*HOMEWORK: crear un array con 6 elementos, recorrerlo con un bucle for, e imprimir alguna frase junto con el elemento indicado en la posicion del array:
 
-let juegos = ["The Last Of Us","Fifa","Call of Duty","NBA 2K","Devil may cry","Far Cray"]
+let juegos = ["The Last Of Us","Fifa","Call of Duty","NBA 2K","Devil may cry","Far Cry"]
 
 for(let i = 0; i < juegos.length; i++){
     alert(`Quiero jugar al ${juegos[i]}`)
