@@ -70,15 +70,15 @@ calle                    SI                    NO            => for in: una PROP
 //? EJERCICIOS: RECONOCER QUE TIPO DE ESTRUCTURA ES Y QUE PODRIAMOS UTILIZAR:
 
 //FOR IN: Va a dar una devolucion del indice ya que es un ARRAY,en este caso las mascotas. Tambien del contenido que hay dentro del INDICE.
-const mascotas = ["Firulais","Momo","Pochi"]
-for (const indice in mascotas) {
-    console.log(mascotas[indice]);
-}
+//const mascotas = ["Firulais","Momo","Pochi"]
+//for (const indice in mascotas) {
+//    console.log(mascotas[indice]);
+//}
 
 //FOR OF: RECORRE EL CONTENIDO DEL ELEMENTO
-//const mascotas = ["Firulais","Momo","Pochi"] //ARRAY 
-//for(const elemento of mascotas)
-//console.log(elemento)
+const mascotas = ["Firulais","Momo","Pochi"] //ARRAY 
+for(const elemento of mascotas)
+console.log(elemento)
 
 
 //FOR IN: Va a mostrar solamente el contenido ya que en este ejemplo de los deptos es un array con objetos lo que dice de que en lugar de indices tiene PROPIEDADES. 
@@ -88,7 +88,6 @@ for (const propiedad in deptos) {
 }
 
 //FOR OF: va a mostarar los elementos de cada objeto que haya dentro
-
 //const deptos = [{piso:3,depto:"A"},{piso:1,depto:"C"}]
 //for(const elemento of deptos)
 //console.log(elemento)
@@ -103,5 +102,5 @@ for(llave in empleados){
 //FOR IN: ocurre lo mismo que en el ejemplo anterior esta vez con la calle.
 const calle = {nombre:" Benito Juarez", altura:" 1556"} // OBJETO (puede contener ARRAYS)
 for(llave in calle){
-    console.log(`propiedad:${llave}, contenido${calle [llave]}`)
+    console.log(`propiedad:${llave}, contenido: ${calle [llave]}`)
 }
