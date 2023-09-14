@@ -35,7 +35,7 @@ prompt(`Cervezas Rubias: ${contador_rubias} \n Cervezas Negras: ${contador_negra
 /*
 Voy a pedirle al cliente que diga cuantos productos agregara a la lista de compras. En base a su eleccion, repartiremos el codigo,preguntandole al ciente,el nombre del producto a agregar, y lo cargaremos a un array con todos los productos que ya haya ingresado.
 */
-
+/*
 let cant_productos = prompt("Ingrese la cantidad de productos a cargar a la lista de compras")
 let lista_compras = [] //lista vacia para almacenar nuestros productos.
 
@@ -46,7 +46,7 @@ for(i=1;i<=cant_productos;i++){
 }
 
 alert(lista_compras)
-
+*/
 /*
 let i = 0 
 
@@ -59,4 +59,31 @@ while(i<cant_productos){
 alert(lista_compras)
 */
 
-//*HOMEWORK: CONSTARA DE CONSTRUIR UN CONTADOR CON CUALQUIER EJEMPLO.LUEGO, ESE MISMO CONTADOR, ÑP PASARAN AL OTRO TIPO DE BUCLE. EJEMPLO: SI PRIMERO LO HICIERON CON FOR, LO PASARAN A WHILE, O VICEVERSA.
+//*HOMEWORK: CONSTARA DE CONSTRUIR UN CONTADOR CON CUALQUIER EJEMPLO.LUEGO, ESE MISMO CONTADOR, LO PASARAN AL OTRO TIPO DE BUCLE. EJEMPLO: SI PRIMERO LO HICIERON CON FOR, LO PASARAN A WHILE, O VICEVERSA.
+
+//FOR:
+/*
+let cant_canciones = prompt("Ingrese cuantas canciones les gusta")
+let list_canciones = []
+
+for(i = 0;i< cant_canciones;i++){
+    let canciones = prompt("Ingrese sus canciones favoritas")
+    list_canciones.push(canciones)
+}
+
+alert(list_canciones)
+*/
+//WHILE:
+
+let i = 0
+
+let cant_canciones = prompt("Ingrese cuantas canciones les gusta")
+let list_canciones = []
+
+while(i<cant_canciones){
+    let canciones = prompt("Ingrese su cancion favorita")
+    list_canciones.push(canciones)
+    i++
+}
+
+alert(list_canciones)
