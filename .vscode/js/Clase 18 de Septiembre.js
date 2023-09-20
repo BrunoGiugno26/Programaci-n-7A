@@ -33,7 +33,7 @@ while (option !==3){
 }
 */
 //* Creamos la lista de compras: nos mostrara opciones para cargar nuevos productos, y la cantidad. Tendremos un menu con 3 opciones: cargar productos, ver listas de compras y salir.
-
+/* 
 let option = 0
 const lista_compras =[]
 
@@ -62,5 +62,36 @@ while(option!== 3){
             break;            
     }
 }
-
+*/
 //*HOMEWORK: REPLICAR EL SISTEMA PROPUESTO EN NUESTROS EJERCICIOS!. DEBEN UTILIZAR UN ARRAY PARA ALCANZAR DATOS, UN OBJETO QUE CONTENDRA DIFERENTES DATOS DENTRO Y LUEGO SERA ALMACENADO EN UN ARRAY (MINIMO 3 PROPIEDADES DEL OBJETO), UN BUCLE CON MINIMO 3 OPCIONES: INGRESAR DATOS , VER DATOS Y SALIR (PUEDEN AGREGAR MAS), UN SWITCH O IF, ELSEIF PARA MANEJAR LA CONDICION DE ELECCION DEL USUARIO.
+
+let option = 0
+const lista_canciones = []
+
+alert("Bienvenidos a Tus gustos musicales")
+
+while(option!==3){
+    option = parseInt(prompt("Ingrese una opcion: \n1)Ingrese su cancion favorita \n2) Ver canciones favoritas \n3) Salir "))
+    switch(option){
+        case 1:
+            let nombre_cancion = prompt("Ingrese cancion")
+            let artista = prompt("Ingrese el artista")
+            let cantidad_cancion = parseInt(prompt("Ingrese la cantidad de canciones"))
+            const cancion = {Nombre:nombre_cancion, Cantidad:cantidad_cancion, Artista:artista}
+            lista_canciones.push(cancion)
+            break;
+        
+        case 2:
+            const listado = lista_canciones.map((cancion,index) => `Cancion ${index+1}: Nombre: ${cancion.Nombre}, Artista: ${cancion.Artista} Cantidad:${cancion.Cantidad}`)
+            alert(listado)
+            break;
+
+        case 3:
+            alert("Gracias por compartir tu musica")
+            break;
+            
+        default:
+            alert("Opcion no valida")
+            break;    
+        }   
+}
