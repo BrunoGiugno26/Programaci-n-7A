@@ -83,3 +83,43 @@ const arca_noe = [... animales_africa, ...animales_selva, ...animales_desierto,a
 //*DESTRUCTURING: basicamente lo que hace es eliminar los simbolos que se obtiene tanto de un array ([""]) o de un objeto ({propiedad:""}) para transformarlo todo en una sola variable y asi poder agregar algo mas ya sea una variable array u objeto mas.
 
 //*AGREGARLE AL USER 11 MAS DATOS
+
+const datos_user = {Horse: "Shimmer", Ocupation: "Patrol", Hobby: "Guitar"}
+
+users [11] = {...users[11],...datos_user}
+
+//! RECORDAR SIEMPRE DESESTRUCTURAR LO QUE NECESITAMOS!!
+
+const datos = {nombre: "Roberto", apellido: "Edquelfort"}
+const domicilio = {domicilio: "La plata", altura: "1162"}
+const laboral = {Profecion: "Peluquero", experiencia: "30 años"}
+
+const user = {...datos,...laboral,...domicilio}
+user
+
+//HOMEWORK: DESTRUCTURING:
+
+/*
+CREAR TRES ARRAYS Y MEDIANTE DESTRUCTURING Y CREAR UN UNICO ARRAY CON TODOS ESOS ELEMENTOS.
+
+CREAR TRES OBJETOS, EN EL CUAL TODOS TENGAN 2 PROPIEDADES. CADA OBJETO DEBE TENER PROPIEDADES DISTINTAS. LUEGO USANDO DESTRUCTURNG, CREAR UN NUEVO OBJETO QUE CONTENGA TODAS LAS PROPIEDADES.
+*/
+
+//Homework 1:
+
+const guitarras_marcas = ["Epiphone","Fender","Yamaha"]
+const bajos_marcas = ["Gibson","Ibanez","Rickenbacker"]
+const baterias_marcas = ["Mapex","Pearl","Gretsch"]
+
+const intrumentos = [...guitarras_marcas, ...bajos_marcas, ...baterias_marcas]
+intrumentos
+
+//Homework 2:
+
+const serie_ficcion = {Nombre: "Strange Things", Temporadas: "4"}
+const estreno = {Primer_capitulos: "2015", numeros_capitulos: "12"}
+const protagonista = {Personaje_Principal: "Eleven", Actriz: "Mille Bobby Brown"}
+
+
+const serie = {...serie_ficcion,...protagonista,estreno}
+serie
