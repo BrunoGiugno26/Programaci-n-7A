@@ -6,7 +6,7 @@
 
 //Operaciones de datos en Js
 
-//? OPERACIONES NUERICAS:
+//? OPERACIONES NUMERICAS:
 
 let suma = 2 + 2
 console.log(suma);
