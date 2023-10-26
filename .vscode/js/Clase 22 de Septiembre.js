@@ -119,7 +119,7 @@ intrumentos
 const serie_ficcion = {Nombre: "Strange Things", Temporadas: "4"}
 const estreno = {Primer_capitulos: "2015", numeros_capitulos: "12"}
 const protagonista = {Personaje_Principal: "Eleven", Actriz: "Mille Bobby Brown"}
+const personaje_excelsior = {Personaje: "Max", Actriz_Excelsior: "Sadie Sink"}
 
-
-const serie = {...serie_ficcion,...protagonista,estreno}
+const serie = {...serie_ficcion,...protagonista,...personaje_excelsior,estreno}
 serie
