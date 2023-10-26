@@ -254,7 +254,7 @@ le diremos al ususario que adivine cuantas lunas posee (el numero correcto es 14
 
 let contador_alumnos = 0
 lista_alumnos = []
-let cant_alumnos = prompt("Cuantos alumnos queremos ingresar")
+//let cant_alumnos = prompt("Cuantos alumnos queremos ingresar")
 
 while(contador_alumnos > cant_alumnos){
    let nombre_alumno = prompt("Ingrese el nombre del alumno")
@@ -284,22 +284,18 @@ alert(lista_alumnos)
 
 //*BUCLE FOR:
 
-const comida = ["Fideos","ravioles","Lomos","Hamburguesas"]
+//const comida = ["Fideos","ravioles","Lomos","Hamburguesas"]
 
-for(let i = 0;i< comida.length;i++){
-    alert (`hoy quiero comer ${comida [i]}`)
-}
+//for(let i = 0;i< comida.length;i++){
+//    alert (`hoy quiero comer ${comida [i]}`)
+//}
 
 //HOMEWORK: crear un Array con 6 elementos, recorrerlo con un bucle for, e imprimir alguna frase junto con el elemento indicado en posicion del array:
 
-let juegos = ["Ludo","Ajedrez","Truco","teg"]
+let juegos = ["Ludo","Ajedrez","Truco","teg","Generala","Estanciero"]
 
-    for(let i = 0; i < juegos.length;i++){
+for(let i = 0; i < juegos.length;i++){
         alert(`hoy voy a jugar al ${juegos[i]}`)
-    }
+}
 
-    const presidentes = [
-        {nombre:"Alverso", apellido:"Fernandez"},
-        {nombre:"rober"}
-    ]
 
